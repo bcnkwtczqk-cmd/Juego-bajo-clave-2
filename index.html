@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Juego bajo clave — GTA V + Red Dead Redemption 2 (PS4)</title>
-  <meta name="description" content="Venta digital inmediata de GTA V y Red Dead Redemption 2 para PS4. Combo disponible. Contáctanos por WhatsApp.">
+  <title>Juego bajo clave — FC 26, GTA V y Red Dead Redemption 2 (PS4 | PS5)</title>
+  <meta name="description" content="Venta digital inmediata de FC 26, GTA V y Red Dead Redemption 2 para PS4 y PS5. Combo disponible. WhatsApp directo.">
   <link rel="icon" href="https://i.imgur.com/8SaZqvP.png">
   <style>
     :root{
@@ -36,23 +36,29 @@
     .thumbs img{width:100%;height:100%;object-fit:cover;display:block}
     .g-sel{display:none}
 
-    /* GTA: mostrar activa + borde activo */
+    /* GTA */
     #g1:checked ~ .g-hero img[data-i="1"], #g2:checked ~ .g-hero img[data-i="2"],
     #g3:checked ~ .g-hero img[data-i="3"], #g4:checked ~ .g-hero img[data-i="4"]{opacity:1}
     #g1:checked ~ .thumbs label[for="g1"], #g2:checked ~ .thumbs label[for="g2"],
     #g3:checked ~ .thumbs label[for="g3"], #g4:checked ~ .thumbs label[for="g4"]{outline:2px solid var(--accent);outline-offset:2px}
 
-    /* RDR2: mostrar activa + borde activo */
+    /* RDR2 */
     #r1:checked ~ .g-hero img[data-i="1"], #r2:checked ~ .g-hero img[data-i="2"],
     #r3:checked ~ .g-hero img[data-i="3"], #r4:checked ~ .g-hero img[data-i="4"]{opacity:1}
     #r1:checked ~ .thumbs label[for="r1"], #r2:checked ~ .thumbs label[for="r2"],
     #r3:checked ~ .thumbs label[for="r3"], #r4:checked ~ .thumbs label[for="r4"]{outline:2px solid var(--accent);outline-offset:2px}
 
-    /* COMBO: mostrar activa + borde activo */
+    /* COMBO */
     #c1:checked ~ .g-hero img[data-i="1"], #c2:checked ~ .g-hero img[data-i="2"],
     #c3:checked ~ .g-hero img[data-i="3"], #c4:checked ~ .g-hero img[data-i="4"]{opacity:1}
     #c1:checked ~ .thumbs label[for="c1"], #c2:checked ~ .thumbs label[for="c2"],
     #c3:checked ~ .thumbs label[for="c3"], #c4:checked ~ .thumbs label[for="c4"]{outline:2px solid var(--accent);outline-offset:2px}
+
+    /* FC26 */
+    #f1:checked ~ .g-hero img[data-i="1"], #f2:checked ~ .g-hero img[data-i="2"],
+    #f3:checked ~ .g-hero img[data-i="3"], #f4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #f1:checked ~ .thumbs label[for="f1"], #f2:checked ~ .thumbs label[for="f2"],
+    #f3:checked ~ .thumbs label[for="f3"], #f4:checked ~ .thumbs label[for="f4"]{outline:2px solid var(--accent);outline-offset:2px}
 
     .p-title{font-size:20px;color:#fff;font-weight:900;margin:2px 0 2px 0}
     .p-meta{font-size:13px;color:#cbd3d9}
@@ -115,8 +121,8 @@
       </div>
     </div>
 
-    <!-- ===== Tarjeta 1: GTA V ===== -->
-    <div class="c-row" id="gta">
+    <!-- ===== Tarjeta 0: FC 26 (ARRIBA) ===== -->
+    <div class="c-row" id="fc26">
       <!-- Galería -->
       <div class="c-col panel">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
@@ -126,47 +132,100 @@
           </div>
         </div>
 
-        <!-- Radios (GTA) -->
-        <input class="g-sel" type="radio" name="gta" id="g1" data-t="1" checked>
-        <input class="g-sel" type="radio" name="gta" id="g2" data-t="2">
-        <input class="g-sel" type="radio" name="gta" id="g3" data-t="3">
-        <input class="g-sel" type="radio" name="gta" id="g4" data-t="4">
+        <!-- Radios (FC26) -->
+        <input class="g-sel" type="radio" name="fc26" id="f1" data-t="1" checked>
+        <input class="g-sel" type="radio" name="fc26" id="f2" data-t="2">
+        <input class="g-sel" type="radio" name="fc26" id="f3" data-t="3">
+        <input class="g-sel" type="radio" name="fc26" id="f4" data-t="4">
 
         <!-- Visor -->
-        <div class="g-hero" aria-label="Galería GTA V">
-          <img data-i="1" src="https://i.imgur.com/Lfe57JA.png" alt="GTA V - Imagen 1">
-          <img data-i="2" src="https://i.imgur.com/FBddn91.png" alt="GTA V - Imagen 2">
-          <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="GTA V - Imagen 3">
-          <img data-i="4" src="https://i.imgur.com/hmsUVxI.png" alt="GTA V - Imagen 4">
+        <div class="g-hero" aria-label="Galería FC 26">
+          <img data-i="1" src="https://i.imgur.com/rInVApM.png" alt="FC 26 - Imagen 1">
+          <img data-i="2" src="https://i.imgur.com/oXLdlT4.png" alt="FC 26 - Imagen 2">
+          <img data-i="3" src="https://i.imgur.com/AWHSWQX.png" alt="FC 26 - Imagen 3">
+          <img data-i="4" src="https://i.imgur.com/cZFD1RP.png" alt="FC 26 - Imagen 4">
         </div>
 
         <!-- Miniaturas -->
         <div class="thumbs" aria-label="Miniaturas">
-          <label for="g1" title="Ver imagen 1"><img src="https://i.imgur.com/Lfe57JA.png" alt="Miniatura 1"></label>
-          <label for="g2" title="Ver imagen 2"><img src="https://i.imgur.com/FBddn91.png" alt="Miniatura 2"></label>
-          <label for="g3" title="Ver imagen 3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura 3"></label>
-          <label for="g4" title="Ver imagen 4"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura 4"></label>
+          <label for="f1" title="Ver imagen 1"><img src="https://i.imgur.com/rInVApM.png" alt="Miniatura 1"></label>
+          <label for="f2" title="Ver imagen 2"><img src="https://i.imgur.com/oXLdlT4.png" alt="Miniatura 2"></label>
+          <label for="f3" title="Ver imagen 3"><img src="https://i.imgur.com/AWHSWQX.png" alt="Miniatura 3"></label>
+          <label for="f4" title="Ver imagen 4"><img src="https://i.imgur.com/cZFD1RP.png" alt="Miniatura 4"></label>
         </div>
         <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
       </div>
 
       <!-- Detalles -->
       <div class="c-col panel">
-        <div class="p-title">Grand Theft Auto V — PS4</div>
+        <div class="p-title">FC 26 — PS4 | PS5</div>
         <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
         <div class="sep"></div>
 
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <div class="price"><small>Precio</small> L 230</div>
-          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20GTA%20V%F0%9F%A5%B7">
+          <div class="price"><small>Precio</small> L 500</div>
+          <a class="cta" target="_blank" rel="noopener"
+             href="https://wa.me/50497647465?text=Quiero%20el%20FC%2026%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
-            Comprar • L 230
+            Comprar • L 500
           </a>
         </div>
 
         <div class="sep"></div>
         <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
           <li>Entrega digital inmediata tras confirmar compra.</li>
+          <li>Compatible con PS4 y PS5 (licencia digital).</li>
+          <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
+          <li>Factura disponible a solicitud.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ===== Tarjeta 1: GTA V ===== -->
+    <div class="c-row" id="gta">
+      <div class="c-col panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="c-title">Último Drop</div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
+          </div>
+        </div>
+        <input class="g-sel" type="radio" name="gta" id="g1" data-t="1" checked>
+        <input class="g-sel" type="radio" name="gta" id="g2" data-t="2">
+        <input class="g-sel" type="radio" name="gta" id="g3" data-t="3">
+        <input class="g-sel" type="radio" name="gta" id="g4" data-t="4">
+        <div class="g-hero" aria-label="Galería GTA V">
+          <img data-i="1" src="https://i.imgur.com/Lfe57JA.png" alt="GTA V - Imagen 1">
+          <img data-i="2" src="https://i.imgur.com/FBddn91.png" alt="GTA V - Imagen 2">
+          <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="GTA V - Imagen 3">
+          <img data-i="4" src="https://i.imgur.com/hmsUVxI.png" alt="GTA V - Imagen 4">
+        </div>
+        <div class="thumbs" aria-label="Miniaturas">
+          <label for="g1"><img src="https://i.imgur.com/Lfe57JA.png" alt="Miniatura 1"></label>
+          <label for="g2"><img src="https://i.imgur.com/FBddn91.png" alt="Miniatura 2"></label>
+          <label for="g3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura 3"></label>
+          <label for="g4"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura 4"></label>
+        </div>
+        <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
+      </div>
+
+      <div class="c-col panel">
+        <div class="p-title">Grand Theft Auto V — PS4 | PS5</div>
+        <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
+        <div class="sep"></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="price"><small>Precio</small> L 230</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20GTA%20V%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
+            Comprar • L 230
+          </a>
+        </div>
+        <div class="sep"></div>
+        <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
+          <li>Entrega digital inmediata tras confirmar compra.</li>
+          <li>Compatible con PS4 y PS5 (licencia digital).</li>
           <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
           <li>Factura disponible a solicitud.</li>
         </ul>
@@ -177,7 +236,6 @@
 
     <!-- ===== Tarjeta 2: Red Dead Redemption 2 ===== -->
     <div class="c-row" id="rdr2">
-      <!-- Galería -->
       <div class="c-col panel">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
           <div class="c-title">Último Drop</div>
@@ -185,48 +243,41 @@
             <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
           </div>
         </div>
-
-        <!-- Radios (RDR2) -->
         <input class="g-sel" type="radio" name="rdr2" id="r1" data-t="1" checked>
         <input class="g-sel" type="radio" name="rdr2" id="r2" data-t="2">
         <input class="g-sel" type="radio" name="rdr2" id="r3" data-t="3">
         <input class="g-sel" type="radio" name="rdr2" id="r4" data-t="4">
-
-        <!-- Visor -->
         <div class="g-hero" aria-label="Galería Red Dead Redemption 2">
           <img data-i="1" src="https://i.imgur.com/Kb2nEGS.png" alt="RDR2 - Imagen 1">
           <img data-i="2" src="https://i.imgur.com/LwviuDG.png" alt="RDR2 - Imagen 2">
           <img data-i="3" src="https://i.imgur.com/4wbDWCn.png" alt="RDR2 - Imagen 3">
           <img data-i="4" src="https://i.imgur.com/w8PJXzb.png" alt="RDR2 - Imagen 4">
         </div>
-
-        <!-- Miniaturas -->
         <div class="thumbs" aria-label="Miniaturas">
-          <label for="r1" title="Ver imagen 1"><img src="https://i.imgur.com/Kb2nEGS.png" alt="Miniatura 1"></label>
-          <label for="r2" title="Ver imagen 2"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura 2"></label>
-          <label for="r3" title="Ver imagen 3"><img src="https://i.imgur.com/4wbDWCn.png" alt="Miniatura 3"></label>
-          <label for="r4" title="Ver imagen 4"><img src="https://i.imgur.com/w8PJXzb.png" alt="Miniatura 4"></label>
+          <label for="r1"><img src="https://i.imgur.com/Kb2nEGS.png" alt="Miniatura 1"></label>
+          <label for="r2"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura 2"></label>
+          <label for="r3"><img src="https://i.imgur.com/4wbDWCn.png" alt="Miniatura 3"></label>
+          <label for="r4"><img src="https://i.imgur.com/w8PJXzb.png" alt="Miniatura 4"></label>
         </div>
         <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
       </div>
 
-      <!-- Detalles -->
       <div class="c-col panel">
-        <div class="p-title">Red Dead Redemption 2 — PS4</div>
+        <div class="p-title">Red Dead Redemption 2 — PS4 | PS5</div>
         <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
         <div class="sep"></div>
-
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <div class="price"><small>Precio</small> L 200</div>
-          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20Red%20Dead%20Redemption%202%F0%9F%A5%B7">
+          <a class="cta" target="_blank" rel="noopener"
+             href="https://wa.me/50497647465?text=Quiero%20el%20Red%20Dead%20Redemption%202%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
             Comprar • L 200
           </a>
         </div>
-
         <div class="sep"></div>
         <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
           <li>Entrega digital inmediata tras confirmar compra.</li>
+          <li>Compatible con PS4 y PS5 (licencia digital).</li>
           <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
           <li>Factura disponible a solicitud.</li>
         </ul>
@@ -235,7 +286,7 @@
 
     <div class="spacer"></div>
 
-    <!-- ===== Tarjeta 3: COMBO (encabezado igual a las otras) ===== -->
+    <!-- ===== Tarjeta 3: COMBO (GTA + RDR2) ===== -->
     <div class="panel" id="combo">
       <div class="c-row" style="align-items:flex-start">
         <!-- Galería del combo -->
@@ -247,37 +298,30 @@
             </div>
           </div>
 
-          <!-- Radios (COMBO) -->
           <input class="g-sel" type="radio" name="combo" id="c1" data-t="1" checked>
           <input class="g-sel" type="radio" name="combo" id="c2" data-t="2">
           <input class="g-sel" type="radio" name="combo" id="c3" data-t="3">
           <input class="g-sel" type="radio" name="combo" id="c4" data-t="4">
 
-          <!-- Visor (COMBO) -->
           <div class="g-hero" aria-label="Galería Combo">
-            <!-- 1) Imagen del combo -->
             <img data-i="1" src="https://i.imgur.com/Oj5ZGgg.png" alt="Combo - Imagen 1">
-            <!-- 2) NUEVA: GTA (otra distinta) -->
-            <img data-i="2" src="https://i.imgur.com/hmsUVxI.png" alt="Combo - GTA imagen alternativa">
-            <!-- 3) GTA (imagen 3) -->
+            <img data-i="2" src="https://i.imgur.com/hmsUVxI.png" alt="Combo - GTA img alt">
             <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="Combo - GTA img 3">
-            <!-- 4) RDR2 (imagen 2) -->
             <img data-i="4" src="https://i.imgur.com/LwviuDG.png" alt="Combo - RDR2 img 2">
           </div>
 
-          <!-- Miniaturas (COMBO) -->
           <div class="thumbs" aria-label="Miniaturas combo">
-            <label for="c1" title="Ver imagen 1"><img src="https://i.imgur.com/Oj5ZGgg.png" alt="Miniatura combo 1"></label>
-            <label for="c2" title="GTA V alternativa"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura combo 2"></label>
-            <label for="c3" title="GTA V"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura combo 3"></label>
-            <label for="c4" title="RDR2"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura combo 4"></label>
+            <label for="c1"><img src="https://i.imgur.com/Oj5ZGgg.png" alt="Miniatura combo 1"></label>
+            <label for="c2"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura combo 2"></label>
+            <label for="c3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura combo 3"></label>
+            <label for="c4"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura combo 4"></label>
           </div>
           <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
         </div>
 
         <!-- Detalles del combo -->
         <div class="c-col">
-          <div class="p-title" style="font-size:22px">Combo — GTA V + Red Dead Redemption 2 (PS4)</div>
+          <div class="p-title" style="font-size:22px">Combo — GTA V + Red Dead Redemption 2 (PS4 | PS5)</div>
           <div class="p-meta">Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
           <div class="sep"></div>
           <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
@@ -290,9 +334,9 @@
           </div>
           <div class="sep"></div>
           <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
-            <li>Incluye ambos juegos digitales para PS4.</li>
-            <li>Entrega digital inmediata tras confirmar compra.</li>
-            <li>Soporte por WhatsApp y factura a solicitud.</li>
+            <li>Incluye ambos juegos digitales.</li>
+            <li>Compatible con PS4 y PS5.</li>
+            <li>Entrega inmediata tras confirmar compra.</li>
           </ul>
         </div>
       </div>
@@ -303,7 +347,7 @@
 
   <!-- Botón flotante WhatsApp -->
   <a class="wa-float" aria-label="Chatea por WhatsApp"
-     href="https://wa.me/50497647465?text=Hola%20tengo%20una%20consulta%20sobre%20los%20juegos%F0%9F%A5%B7" target="_blank" rel="noopener">
+     href="https://wa.me/50497647465?text=Hola%20tengo%20una%20consulta%20sobre%20los%20juegos%20para%20PS4%20y%20PS5%F0%9F%A5%B7" target="_blank" rel="noopener">
     <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
       <path d="M19.11 17.53c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.61.14-.18.27-.7.86-.86 1.03-.16.18-.32.2-.59.07-.27-.13-1.12-.41-2.13-1.3-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.11-.54.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.13-.61-1.46-.84-2-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.66 1.12 2.84.14.18 1.93 2.95 4.68 4.03.65.28 1.16.45 1.56.58.65.2 1.24.17 1.71.1.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.31z"/><path d="M16.02 5.33c-5.88 0-10.66 4.78-10.66 10.66 0 1.88.49 3.63 1.34 5.16L5 27l5.99-1.57c1.5.82 3.22 1.29 5.04 1.29 5.88 0 10.66-4.78 10.66-10.66S21.9 5.33 16.02 5.33zm0 19.2c-1.65 0-3.19-.49-4.48-1.33l-.32-.2-3.55.93.95-3.46-.21-.35a8.89 8.89 0 0 1-1.36-4.76c0-4.93 4.01-8.94 8.94-8.94s8.94 4.01 8.94 8.94-4.01 8.94-8.94 8.94z"/>
     </svg>
