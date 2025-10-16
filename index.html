@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Juego bajo clave — FC 26, GTA V y Red Dead Redemption 2 (PS4 | PS5)</title>
-  <meta name="description" content="Venta digital inmediata de FC 26, GTA V y Red Dead Redemption 2 para PS4 y PS5. Combo disponible. WhatsApp directo.">
+  <title>Juego bajo clave — Catálogo PS4 | PS5</title>
+  <meta name="description" content="Venta digital inmediata de juegos para PS4 y PS5. FC 26, GTA V, Red Dead Redemption 2, y más. Guía PDF y WhatsApp directo.">
   <link rel="icon" href="https://i.imgur.com/8SaZqvP.png">
   <style>
     :root{
@@ -25,75 +25,61 @@
     .c-title{font-weight:900;font-size:26px;margin:6px 0 2px 0;color:#fff}
     .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);margin:10px 0}
 
-    /* === Galerías (apiladas + opacidad) === */
+    /* Galerías */
     .g-hero{position:relative;border-radius:10px;overflow:hidden;height:300px;background:#000;border:1px solid rgba(255,255,255,.08)}
-    .g-hero img{
-      position:absolute; inset:0; width:100%; height:100%;
-      object-fit:contain; opacity:0; transition:opacity .25s ease; display:block; pointer-events:none;
-    }
+    .g-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .25s ease;display:block;pointer-events:none}
     .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
     .thumbs label{display:block;border:1px solid rgba(255,255,255,.1);background:#0d0d0d;border-radius:8px;overflow:hidden;height:68px;width:100%;cursor:pointer}
     .thumbs img{width:100%;height:100%;object-fit:cover;display:block}
     .g-sel{display:none}
 
-    /* GTA */
-    #g1:checked ~ .g-hero img[data-i="1"], #g2:checked ~ .g-hero img[data-i="2"],
-    #g3:checked ~ .g-hero img[data-i="3"], #g4:checked ~ .g-hero img[data-i="4"]{opacity:1}
-    #g1:checked ~ .thumbs label[for="g1"], #g2:checked ~ .thumbs label[for="g2"],
-    #g3:checked ~ .thumbs label[for="g3"], #g4:checked ~ .thumbs label[for="g4"]{outline:2px solid var(--accent);outline-offset:2px}
-
-    /* RDR2 */
-    #r1:checked ~ .g-hero img[data-i="1"], #r2:checked ~ .g-hero img[data-i="2"],
-    #r3:checked ~ .g-hero img[data-i="3"], #r4:checked ~ .g-hero img[data-i="4"]{opacity:1}
-    #r1:checked ~ .thumbs label[for="r1"], #r2:checked ~ .thumbs label[for="r2"],
-    #r3:checked ~ .thumbs label[for="r3"], #r4:checked ~ .thumbs label[for="r4"]{outline:2px solid var(--accent);outline-offset:2px}
-
-    /* COMBO */
-    #c1:checked ~ .g-hero img[data-i="1"], #c2:checked ~ .g-hero img[data-i="2"],
-    #c3:checked ~ .g-hero img[data-i="3"], #c4:checked ~ .g-hero img[data-i="4"]{opacity:1}
-    #c1:checked ~ .thumbs label[for="c1"], #c2:checked ~ .thumbs label[for="c2"],
-    #c3:checked ~ .thumbs label[for="c3"], #c4:checked ~ .thumbs label[for="c4"]{outline:2px solid var(--accent);outline-offset:2px}
-
+    /* Conjuntos (repite patrón por juego) */
     /* FC26 */
-    #f1:checked ~ .g-hero img[data-i="1"], #f2:checked ~ .g-hero img[data-i="2"],
-    #f3:checked ~ .g-hero img[data-i="3"], #f4:checked ~ .g-hero img[data-i="4"]{opacity:1}
-    #f1:checked ~ .thumbs label[for="f1"], #f2:checked ~ .thumbs label[for="f2"],
-    #f3:checked ~ .thumbs label[for="f3"], #f4:checked ~ .thumbs label[for="f4"]{outline:2px solid var(--accent);outline-offset:2px}
+    #f1:checked ~ .g-hero img[data-i="1"], #f2:checked ~ .g-hero img[data-i="2"], #f3:checked ~ .g-hero img[data-i="3"], #f4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #f1:checked ~ .thumbs label[for="f1"], #f2:checked ~ .thumbs label[for="f2"], #f3:checked ~ .thumbs label[for="f3"], #f4:checked ~ .thumbs label[for="f4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* GTA */
+    #g1:checked ~ .g-hero img[data-i="1"], #g2:checked ~ .g-hero img[data-i="2"], #g3:checked ~ .g-hero img[data-i="3"], #g4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #g1:checked ~ .thumbs label[for="g1"], #g2:checked ~ .thumbs label[for="g2"], #g3:checked ~ .thumbs label[for="g3"], #g4:checked ~ .thumbs label[for="g4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* RDR2 */
+    #r1:checked ~ .g-hero img[data-i="1"], #r2:checked ~ .g-hero img[data-i="2"], #r3:checked ~ .g-hero img[data-i="3"], #r4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #r1:checked ~ .thumbs label[for="r1"], #r2:checked ~ .thumbs label[for="r2"], #r3:checked ~ .thumbs label[for="r3"], #r4:checked ~ .thumbs label[for="r4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* COMBO */
+    #c1:checked ~ .g-hero img[data-i="1"], #c2:checked ~ .g-hero img[data-i="2"], #c3:checked ~ .g-hero img[data-i="3"], #c4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #c1:checked ~ .thumbs label[for="c1"], #c2:checked ~ .thumbs label[for="c2"], #c3:checked ~ .thumbs label[for="c3"], #c4:checked ~ .thumbs label[for="c4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* MKX */
+    #mx1:checked ~ .g-hero img[data-i="1"], #mx2:checked ~ .g-hero img[data-i="2"], #mx3:checked ~ .g-hero img[data-i="3"], #mx4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #mx1:checked ~ .thumbs label[for="mx1"], #mx2:checked ~ .thumbs label[for="mx2"], #mx3:checked ~ .thumbs label[for="mx3"], #mx4:checked ~ .thumbs label[for="mx4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* MK11 */
+    #m11-1:checked ~ .g-hero img[data-i="1"], #m11-2:checked ~ .g-hero img[data-i="2"], #m11-3:checked ~ .g-hero img[data-i="3"], #m11-4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #m11-1:checked ~ .thumbs label[for="m11-1"], #m11-2:checked ~ .thumbs label[for="m11-2"], #m11-3:checked ~ .thumbs label[for="m11-3"], #m11-4:checked ~ .thumbs label[for="m11-4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* GRB */
+    #gr1:checked ~ .g-hero img[data-i="1"], #gr2:checked ~ .g-hero img[data-i="2"], #gr3:checked ~ .g-hero img[data-i="3"], #gr4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #gr1:checked ~ .thumbs label[for="gr1"], #gr2:checked ~ .thumbs label[for="gr2"], #gr3:checked ~ .thumbs label[for="gr3"], #gr4:checked ~ .thumbs label[for="gr4"]{outline:2px solid var(--accent);outline-offset:2px}
+    /* RE4 */
+    #re1:checked ~ .g-hero img[data-i="1"], #re2:checked ~ .g-hero img[data-i="2"], #re3:checked ~ .g-hero img[data-i="3"], #re4:checked ~ .g-hero img[data-i="4"]{opacity:1}
+    #re1:checked ~ .thumbs label[for="re1"], #re2:checked ~ .thumbs label[for="re2"], #re3:checked ~ .thumbs label[for="re3"], #re4:checked ~ .thumbs label[for="re4"]{outline:2px solid var(--accent);outline-offset:2px}
 
     .p-title{font-size:20px;color:#fff;font-weight:900;margin:2px 0 2px 0}
     .p-meta{font-size:13px;color:#cbd3d9}
     .price{font-weight:900;font-size:20px;color:#fff}
     .price small{color:var(--muted);font-size:12px;font-weight:600;margin-right:6px}
 
-    /* Botón CTA con brillo */
     .cta{
       display:inline-flex;align-items:center;justify-content:center;gap:8px;
       background:var(--accent);color:#05260f;text-decoration:none;
       padding:12px 16px;border-radius:10px;font-weight:900;border:0;cursor:pointer;min-width:220px;
       position:relative;overflow:hidden; box-shadow:0 0 12px rgba(0,255,106,.35);
     }
-    .cta::before{
-      content:"";position:absolute;top:0;left:-110%;width:100%;height:100%;
-      background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);
-      transition:left .7s ease;
-    }
+    .cta::before{content:"";position:absolute;top:0;left:-110%;width:100%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transition:left .7s ease}
     .cta:hover::before{left:100%}
     .cta:hover{filter:brightness(1.08)}
 
-    /* Botón flotante WhatsApp */
     .wa-float{
-      position:fixed; right:16px; bottom:16px; z-index:9999;
-      width:56px; height:56px; border-radius:50%;
-      background:var(--accent); display:flex; align-items:center; justify-content:center;
-      box-shadow:0 10px 30px rgba(0,0,0,.5); text-decoration:none; color:#05260f; font-weight:900;
-      overflow:hidden;
-    }
-    .wa-float svg{width:28px; height:28px}
-    .wa-float::after{
-      content:""; position:absolute; inset:-40%; border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.55), transparent 60%);
-      animation:pulse 2.2s infinite ease-in-out;
-    }
+      position:fixed;right:16px;bottom:16px;z-index:9999;width:56px;height:56px;border-radius:50%;
+      background:var(--accent);display:flex;align-items:center;justify-content:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.5);text-decoration:none;color:#05260f;font-weight:900;overflow:hidden}
+    .wa-float svg{width:28px;height:28px}
+    .wa-float::after{content:"";position:absolute;inset:-40%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.55),transparent 60%);animation:pulse 2.2s infinite ease-in-out}
     @keyframes pulse{0%{transform:scale(0)}60%{transform:scale(1)}100%{transform:scale(1)}}
 
     @media (max-width:560px){
@@ -103,6 +89,8 @@
     }
     .spacer{height:28px}
     footer{color:#c7cfd6;text-align:center;margin-top:24px;font-size:12px}
+    .guide{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .guide a{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:#0f1f15;border:1px solid rgba(0,255,106,.25);color:#bfffcf;text-decoration:none;font-weight:800}
   </style>
 </head>
 <body>
@@ -121,9 +109,23 @@
       </div>
     </div>
 
-    <!-- ===== Tarjeta 0: FC 26 (ARRIBA) ===== -->
+    <!-- Guía PDF -->
+    <div class="panel" style="margin-bottom:12px">
+      <div class="guide">
+        <div class="muted" style="font-size:14px">
+          ¿Primer compra digital? <b style="color:#fff">Aquí tienes una guía de instalación (PDF)</b>.
+        </div>
+        <!-- Reemplaza TU_ENLACE_PDF por tu link real de Drive -->
+        <a href="https://drive.google.com/file/d/1s19A9i6TMzMYrcc5pW315XF-xDQchCux/view?usp=drivesdk" target="_blank" rel="noopener" title="Ver guía en PDF">
+          <!-- ícono PDF simple -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16l4-2 4 2 4-2 4 2V8l-6-6zM8 11h8v2H8v-2zm0 4h8v2H8v-2zM13 3.5V9h5.5L13 3.5z"/></svg>
+          Ver guía (PDF)
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== Tarjeta 0: FC 26 ===== -->
     <div class="c-row" id="fc26">
-      <!-- Galería -->
       <div class="c-col panel">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
           <div class="c-title">Último Drop</div>
@@ -131,51 +133,36 @@
             <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
           </div>
         </div>
-
-        <!-- Radios (FC26) -->
-        <input class="g-sel" type="radio" name="fc26" id="f1" data-t="1" checked>
-        <input class="g-sel" type="radio" name="fc26" id="f2" data-t="2">
-        <input class="g-sel" type="radio" name="fc26" id="f3" data-t="3">
-        <input class="g-sel" type="radio" name="fc26" id="f4" data-t="4">
-
-        <!-- Visor -->
-        <div class="g-hero" aria-label="Galería FC 26">
-          <img data-i="1" src="https://i.imgur.com/rInVApM.png" alt="FC 26 - Imagen 1">
-          <img data-i="2" src="https://i.imgur.com/oXLdlT4.png" alt="FC 26 - Imagen 2">
-          <img data-i="3" src="https://i.imgur.com/AWHSWQX.png" alt="FC 26 - Imagen 3">
-          <img data-i="4" src="https://i.imgur.com/cZFD1RP.png" alt="FC 26 - Imagen 4">
+        <input class="g-sel" type="radio" name="fc26" id="f1" checked>
+        <input class="g-sel" type="radio" name="fc26" id="f2">
+        <input class="g-sel" type="radio" name="fc26" id="f3">
+        <input class="g-sel" type="radio" name="fc26" id="f4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/rInVApM.png" alt="FC 26 - 1">
+          <img data-i="2" src="https://i.imgur.com/oXLdlT4.png" alt="FC 26 - 2">
+          <img data-i="3" src="https://i.imgur.com/AWHSWQX.png" alt="FC 26 - 3">
+          <img data-i="4" src="https://i.imgur.com/cZFD1RP.png" alt="FC 26 - 4">
         </div>
-
-        <!-- Miniaturas -->
-        <div class="thumbs" aria-label="Miniaturas">
-          <label for="f1" title="Ver imagen 1"><img src="https://i.imgur.com/rInVApM.png" alt="Miniatura 1"></label>
-          <label for="f2" title="Ver imagen 2"><img src="https://i.imgur.com/oXLdlT4.png" alt="Miniatura 2"></label>
-          <label for="f3" title="Ver imagen 3"><img src="https://i.imgur.com/AWHSWQX.png" alt="Miniatura 3"></label>
-          <label for="f4" title="Ver imagen 4"><img src="https://i.imgur.com/cZFD1RP.png" alt="Miniatura 4"></label>
+        <div class="thumbs">
+          <label for="f1"><img src="https://i.imgur.com/rInVApM.png" alt="t1"></label>
+          <label for="f2"><img src="https://i.imgur.com/oXLdlT4.png" alt="t2"></label>
+          <label for="f3"><img src="https://i.imgur.com/AWHSWQX.png" alt="t3"></label>
+          <label for="f4"><img src="https://i.imgur.com/cZFD1RP.png" alt="t4"></label>
         </div>
         <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
       </div>
-
-      <!-- Detalles -->
       <div class="c-col panel">
         <div class="p-title">FC 26 — PS4 | PS5</div>
         <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
         <div class="sep"></div>
-
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <div class="price"><small>Precio</small> L 500</div>
-          <a class="cta" target="_blank" rel="noopener"
-             href="https://wa.me/50497647465?text=Quiero%20el%20FC%2026%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
-            Comprar • L 500
-          </a>
+          <div class="price"><small>Precio</small> L 499</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20FC%2026%20para%20PS4%20o%20PS5%F0%9F%A5%B7">Comprar • L 499</a>
         </div>
-
         <div class="sep"></div>
         <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
-          <li>Entrega digital inmediata tras confirmar compra.</li>
           <li>Compatible con PS4 y PS5 (licencia digital).</li>
-          <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
+          <li>Entrega digital inmediata tras confirmar compra.</li>
           <li>Factura disponible a solicitud.</li>
         </ul>
       </div>
@@ -188,46 +175,37 @@
       <div class="c-col panel">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
           <div class="c-title">Último Drop</div>
-          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px">
-            <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
-          </div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
         </div>
-        <input class="g-sel" type="radio" name="gta" id="g1" data-t="1" checked>
-        <input class="g-sel" type="radio" name="gta" id="g2" data-t="2">
-        <input class="g-sel" type="radio" name="gta" id="g3" data-t="3">
-        <input class="g-sel" type="radio" name="gta" id="g4" data-t="4">
-        <div class="g-hero" aria-label="Galería GTA V">
-          <img data-i="1" src="https://i.imgur.com/Lfe57JA.png" alt="GTA V - Imagen 1">
-          <img data-i="2" src="https://i.imgur.com/FBddn91.png" alt="GTA V - Imagen 2">
-          <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="GTA V - Imagen 3">
-          <img data-i="4" src="https://i.imgur.com/hmsUVxI.png" alt="GTA V - Imagen 4">
+        <input class="g-sel" type="radio" name="gta" id="g1" checked>
+        <input class="g-sel" type="radio" name="gta" id="g2">
+        <input class="g-sel" type="radio" name="gta" id="g3">
+        <input class="g-sel" type="radio" name="gta" id="g4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/Lfe57JA.png" alt="GTA 1">
+          <img data-i="2" src="https://i.imgur.com/FBddn91.png" alt="GTA 2">
+          <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="GTA 3">
+          <img data-i="4" src="https://i.imgur.com/hmsUVxI.png" alt="GTA 4">
         </div>
-        <div class="thumbs" aria-label="Miniaturas">
-          <label for="g1"><img src="https://i.imgur.com/Lfe57JA.png" alt="Miniatura 1"></label>
-          <label for="g2"><img src="https://i.imgur.com/FBddn91.png" alt="Miniatura 2"></label>
-          <label for="g3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura 3"></label>
-          <label for="g4"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura 4"></label>
+        <div class="thumbs">
+          <label for="g1"><img src="https://i.imgur.com/Lfe57JA.png" alt="t1"></label>
+          <label for="g2"><img src="https://i.imgur.com/FBddn91.png" alt="t2"></label>
+          <label for="g3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="t3"></label>
+          <label for="g4"><img src="https://i.imgur.com/hmsUVxI.png" alt="t4"></label>
         </div>
         <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
       </div>
-
       <div class="c-col panel">
         <div class="p-title">Grand Theft Auto V — PS4 | PS5</div>
         <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
         <div class="sep"></div>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <div class="price"><small>Precio</small> L 230</div>
-          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20GTA%20V%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
-            Comprar • L 230
-          </a>
+          <div class="price"><small>Precio</small> L 229</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20GTA%20V%20para%20PS4%20o%20PS5%F0%9F%A5%B7">Comprar • L 229</a>
         </div>
         <div class="sep"></div>
         <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
-          <li>Entrega digital inmediata tras confirmar compra.</li>
-          <li>Compatible con PS4 y PS5 (licencia digital).</li>
-          <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
-          <li>Factura disponible a solicitud.</li>
+          <li>Compatible con PS4 y PS5.</li><li>Entrega inmediata.</li>
         </ul>
       </div>
     </div>
@@ -239,105 +217,220 @@
       <div class="c-col panel">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
           <div class="c-title">Último Drop</div>
-          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px">
-            <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
-          </div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
         </div>
-        <input class="g-sel" type="radio" name="rdr2" id="r1" data-t="1" checked>
-        <input class="g-sel" type="radio" name="rdr2" id="r2" data-t="2">
-        <input class="g-sel" type="radio" name="rdr2" id="r3" data-t="3">
-        <input class="g-sel" type="radio" name="rdr2" id="r4" data-t="4">
-        <div class="g-hero" aria-label="Galería Red Dead Redemption 2">
-          <img data-i="1" src="https://i.imgur.com/Kb2nEGS.png" alt="RDR2 - Imagen 1">
-          <img data-i="2" src="https://i.imgur.com/LwviuDG.png" alt="RDR2 - Imagen 2">
-          <img data-i="3" src="https://i.imgur.com/4wbDWCn.png" alt="RDR2 - Imagen 3">
-          <img data-i="4" src="https://i.imgur.com/w8PJXzb.png" alt="RDR2 - Imagen 4">
+        <input class="g-sel" type="radio" name="rdr2" id="r1" checked>
+        <input class="g-sel" type="radio" name="rdr2" id="r2">
+        <input class="g-sel" type="radio" name="rdr2" id="r3">
+        <input class="g-sel" type="radio" name="rdr2" id="r4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/Kb2nEGS.png" alt="RDR2 1">
+          <img data-i="2" src="https://i.imgur.com/LwviuDG.png" alt="RDR2 2">
+          <img data-i="3" src="https://i.imgur.com/4wbDWCn.png" alt="RDR2 3">
+          <img data-i="4" src="https://i.imgur.com/w8PJXzb.png" alt="RDR2 4">
         </div>
-        <div class="thumbs" aria-label="Miniaturas">
-          <label for="r1"><img src="https://i.imgur.com/Kb2nEGS.png" alt="Miniatura 1"></label>
-          <label for="r2"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura 2"></label>
-          <label for="r3"><img src="https://i.imgur.com/4wbDWCn.png" alt="Miniatura 3"></label>
-          <label for="r4"><img src="https://i.imgur.com/w8PJXzb.png" alt="Miniatura 4"></label>
+        <div class="thumbs">
+          <label for="r1"><img src="https://i.imgur.com/Kb2nEGS.png" alt="t1"></label>
+          <label for="r2"><img src="https://i.imgur.com/LwviuDG.png" alt="t2"></label>
+          <label for="r3"><img src="https://i.imgur.com/4wbDWCn.png" alt="t3"></label>
+          <label for="r4"><img src="https://i.imgur.com/w8PJXzb.png" alt="t4"></label>
         </div>
         <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
       </div>
-
       <div class="c-col panel">
         <div class="p-title">Red Dead Redemption 2 — PS4 | PS5</div>
         <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
         <div class="sep"></div>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <div class="price"><small>Precio</small> L 200</div>
-          <a class="cta" target="_blank" rel="noopener"
-             href="https://wa.me/50497647465?text=Quiero%20el%20Red%20Dead%20Redemption%202%20para%20PS4%20o%20PS5%F0%9F%A5%B7">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
-            Comprar • L 200
-          </a>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20Red%20Dead%20Redemption%202%20para%20PS4%20o%20PS5%F0%9F%A5%B7">Comprar • L 200</a>
         </div>
-        <div class="sep"></div>
-        <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
-          <li>Entrega digital inmediata tras confirmar compra.</li>
-          <li>Compatible con PS4 y PS5 (licencia digital).</li>
-          <li>Pago vía depósito o transferencia (detalles por WhatsApp).</li>
-          <li>Factura disponible a solicitud.</li>
-        </ul>
       </div>
     </div>
 
     <div class="spacer"></div>
 
-    <!-- ===== Tarjeta 3: COMBO (GTA + RDR2) ===== -->
+    <!-- ===== MKX ===== -->
+    <div class="c-row" id="mkx">
+      <div class="c-col panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="c-title">Último Drop</div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
+        </div>
+        <input class="g-sel" type="radio" name="mkx" id="mx1" checked>
+        <input class="g-sel" type="radio" name="mkx" id="mx2">
+        <input class="g-sel" type="radio" name="mkx" id="mx3">
+        <input class="g-sel" type="radio" name="mkx" id="mx4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/Xiye6GW.png" alt="MKX 1">
+          <img data-i="2" src="https://i.imgur.com/FJ7wDWz.png" alt="MKX 2">
+          <img data-i="3" src="https://i.imgur.com/pb4t5Dk.png" alt="MKX 3">
+          <img data-i="4" src="https://i.imgur.com/EYy3ctM.png" alt="MKX 4">
+        </div>
+        <div class="thumbs">
+          <label for="mx1"><img src="https://i.imgur.com/Xiye6GW.png" alt="t1"></label>
+          <label for="mx2"><img src="https://i.imgur.com/FJ7wDWz.png" alt="t2"></label>
+          <label for="mx3"><img src="https://i.imgur.com/pb4t5Dk.png" alt="t3"></label>
+          <label for="mx4"><img src="https://i.imgur.com/EYy3ctM.png" alt="t4"></label>
+        </div>
+      </div>
+      <div class="c-col panel">
+        <div class="p-title">Mortal Kombat X — PS4 | PS5</div>
+        <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
+        <div class="sep"></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="price"><small>Precio</small> L 189</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20Mortal%20Kombat%20X%20para%20PS4%20o%20PS5">Comprar • L 189</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ===== MK11 Ultimate ===== -->
+    <div class="c-row" id="mk11">
+      <div class="c-col panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="c-title">Último Drop</div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
+        </div>
+        <input class="g-sel" type="radio" name="mk11" id="m11-1" checked>
+        <input class="g-sel" type="radio" name="mk11" id="m11-2">
+        <input class="g-sel" type="radio" name="mk11" id="m11-3">
+        <input class="g-sel" type="radio" name="mk11" id="m11-4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/1Ods8Op.png" alt="MK11 1">
+          <img data-i="2" src="https://i.imgur.com/qDrLose.png" alt="MK11 2">
+          <img data-i="3" src="https://i.imgur.com/15NO9DY.png" alt="MK11 3">
+          <img data-i="4" src="https://i.imgur.com/15NO9DY.png" alt="MK11 4">
+        </div>
+        <div class="thumbs">
+          <label for="m11-1"><img src="https://i.imgur.com/1Ods8Op.png" alt="t1"></label>
+          <label for="m11-2"><img src="https://i.imgur.com/qDrLose.png" alt="t2"></label>
+          <label for="m11-3"><img src="https://i.imgur.com/15NO9DY.png" alt="t3"></label>
+          <label for="m11-4"><img src="https://i.imgur.com/15NO9DY.png" alt="t4"></label>
+        </div>
+      </div>
+      <div class="c-col panel">
+        <div class="p-title">Mortal Kombat 11 Ultimate — PS4 | PS5</div>
+        <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
+        <div class="sep"></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="price"><small>Precio</small> L 199</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20Mortal%20Kombat%2011%20Ultimate%20para%20PS4%20o%20PS5">Comprar • L 199</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ===== Ghost Recon Breakpoint Deluxe ===== -->
+    <div class="c-row" id="grb">
+      <div class="c-col panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="c-title">Último Drop</div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
+        </div>
+        <input class="g-sel" type="radio" name="grb" id="gr1" checked>
+        <input class="g-sel" type="radio" name="grb" id="gr2">
+        <input class="g-sel" type="radio" name="grb" id="gr3">
+        <input class="g-sel" type="radio" name="grb" id="gr4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/bDtUX2E.png" alt="GRB 1">
+          <img data-i="2" src="https://i.imgur.com/D6JsDoD.png" alt="GRB 2">
+          <img data-i="3" src="https://i.imgur.com/kCx3O8l.png" alt="GRB 3">
+          <img data-i="4" src="https://i.imgur.com/966fhtq.png" alt="GRB 4">
+        </div>
+        <div class="thumbs">
+          <label for="gr1"><img src="https://i.imgur.com/bDtUX2E.png" alt="t1"></label>
+          <label for="gr2"><img src="https://i.imgur.com/D6JsDoD.png" alt="t2"></label>
+          <label for="gr3"><img src="https://i.imgur.com/kCx3O8l.png" alt="t3"></label>
+          <label for="gr4"><img src="https://i.imgur.com/966fhtq.png" alt="t4"></label>
+        </div>
+      </div>
+      <div class="c-col panel">
+        <div class="p-title">Ghost Recon Breakpoint Deluxe — PS4 | PS5</div>
+        <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
+        <div class="sep"></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="price"><small>Precio</small> L 389</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20Ghost%20Recon%20Breakpoint%20Deluxe%20para%20PS4%20o%20PS5">Comprar • L 389</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ===== Resident Evil 4 ===== -->
+    <div class="c-row" id="re4">
+      <div class="c-col panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="c-title">Último Drop</div>
+          <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
+        </div>
+        <input class="g-sel" type="radio" name="re4" id="re1" checked>
+        <input class="g-sel" type="radio" name="re4" id="re2">
+        <input class="g-sel" type="radio" name="re4" id="re3">
+        <input class="g-sel" type="radio" name="re4" id="re4">
+        <div class="g-hero">
+          <img data-i="1" src="https://i.imgur.com/WDfzavS.png" alt="RE4 1">
+          <img data-i="2" src="https://i.imgur.com/UrkgNp3.png" alt="RE4 2">
+          <img data-i="3" src="https://i.imgur.com/SXPSJug.png" alt="RE4 3">
+          <img data-i="4" src="https://i.imgur.com/L2muQyB.png" alt="RE4 4">
+        </div>
+        <div class="thumbs">
+          <label for="re1"><img src="https://i.imgur.com/WDfzavS.png" alt="t1"></label>
+          <label for="re2"><img src="https://i.imgur.com/UrkgNp3.png" alt="t2"></label>
+          <label for="re3"><img src="https://i.imgur.com/SXPSJug.png" alt="t3"></label>
+          <label for="re4"><img src="https://i.imgur.com/L2muQyB.png" alt="t4"></label>
+        </div>
+      </div>
+      <div class="c-col panel">
+        <div class="p-title">Resident Evil 4 — PS4 | PS5</div>
+        <div class="p-meta">Estado: <b>Original</b> • Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
+        <div class="sep"></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="price"><small>Precio</small> L 349</div>
+          <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20Resident%20Evil%204%20para%20PS4%20o%20PS5">Comprar • L 349</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ===== Combo GTA + RDR2 (se mantiene) ===== -->
     <div class="panel" id="combo">
       <div class="c-row" style="align-items:flex-start">
-        <!-- Galería del combo -->
         <div class="c-col">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
             <div class="c-title">Último Drop</div>
-            <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px">
-              <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible
-            </div>
+            <div class="muted" style="font-size:12px;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> Disponible</div>
           </div>
-
-          <input class="g-sel" type="radio" name="combo" id="c1" data-t="1" checked>
-          <input class="g-sel" type="radio" name="combo" id="c2" data-t="2">
-          <input class="g-sel" type="radio" name="combo" id="c3" data-t="3">
-          <input class="g-sel" type="radio" name="combo" id="c4" data-t="4">
-
-          <div class="g-hero" aria-label="Galería Combo">
-            <img data-i="1" src="https://i.imgur.com/Oj5ZGgg.png" alt="Combo - Imagen 1">
-            <img data-i="2" src="https://i.imgur.com/hmsUVxI.png" alt="Combo - GTA img alt">
-            <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="Combo - GTA img 3">
-            <img data-i="4" src="https://i.imgur.com/LwviuDG.png" alt="Combo - RDR2 img 2">
+          <input class="g-sel" type="radio" name="combo" id="c1" checked>
+          <input class="g-sel" type="radio" name="combo" id="c2">
+          <input class="g-sel" type="radio" name="combo" id="c3">
+          <input class="g-sel" type="radio" name="combo" id="c4">
+          <div class="g-hero">
+            <img data-i="1" src="https://i.imgur.com/Oj5ZGgg.png" alt="Combo 1">
+            <img data-i="2" src="https://i.imgur.com/hmsUVxI.png" alt="Combo 2">
+            <img data-i="3" src="https://i.imgur.com/vjkgZ6r.png" alt="Combo 3">
+            <img data-i="4" src="https://i.imgur.com/LwviuDG.png" alt="Combo 4">
           </div>
-
-          <div class="thumbs" aria-label="Miniaturas combo">
-            <label for="c1"><img src="https://i.imgur.com/Oj5ZGgg.png" alt="Miniatura combo 1"></label>
-            <label for="c2"><img src="https://i.imgur.com/hmsUVxI.png" alt="Miniatura combo 2"></label>
-            <label for="c3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="Miniatura combo 3"></label>
-            <label for="c4"><img src="https://i.imgur.com/LwviuDG.png" alt="Miniatura combo 4"></label>
+          <div class="thumbs">
+            <label for="c1"><img src="https://i.imgur.com/Oj5ZGgg.png" alt="t1"></label>
+            <label for="c2"><img src="https://i.imgur.com/hmsUVxI.png" alt="t2"></label>
+            <label for="c3"><img src="https://i.imgur.com/vjkgZ6r.png" alt="t3"></label>
+            <label for="c4"><img src="https://i.imgur.com/LwviuDG.png" alt="t4"></label>
           </div>
-          <div class="muted" style="font-size:12px;margin-top:6px">Toca una miniatura para cambiar la imagen.</div>
         </div>
-
-        <!-- Detalles del combo -->
         <div class="c-col">
           <div class="p-title" style="font-size:22px">Combo — GTA V + Red Dead Redemption 2 (PS4 | PS5)</div>
           <div class="p-meta">Formato: <b>Digital</b> • Entrega: <b>Inmediata</b></div>
           <div class="sep"></div>
           <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
             <div class="price"><small>Precio</small> L 450</div>
-            <a class="cta" target="_blank" rel="noopener"
-               href="https://wa.me/50497647465?text=Quiero%20el%20COMBO%20GTA%20V%20%2B%20Red%20Dead%20Redemption%202%20por%20L%20450%F0%9F%A5%B7">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.9"><path d="M20.5 3.5a4.5 4.5 0 0 0-6.364 0L3 14.636V21h6.364L20.5 9.864a4.5 4.5 0 0 0 0-6.364ZM8.95 19H5v-3.95l9.78-9.78 3.95 3.95L8.95 19Z"/></svg>
-              Comprar • L 450
-            </a>
+            <a class="cta" target="_blank" rel="noopener" href="https://wa.me/50497647465?text=Quiero%20el%20COMBO%20GTA%20V%20%2B%20Red%20Dead%20Redemption%202%20por%20L%20450%F0%9F%A5%B7">Comprar • L 450</a>
           </div>
-          <div class="sep"></div>
-          <ul style="margin:0 0 4px 16px;padding:0;line-height:1.5">
-            <li>Incluye ambos juegos digitales.</li>
-            <li>Compatible con PS4 y PS5.</li>
-            <li>Entrega inmediata tras confirmar compra.</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -347,10 +440,8 @@
 
   <!-- Botón flotante WhatsApp -->
   <a class="wa-float" aria-label="Chatea por WhatsApp"
-     href="https://wa.me/50497647465?text=Hola%20tengo%20una%20consulta%20sobre%20los%20juegos%20para%20PS4%20y%20PS5%F0%9F%A5%B7" target="_blank" rel="noopener">
-    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-      <path d="M19.11 17.53c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.61.14-.18.27-.7.86-.86 1.03-.16.18-.32.2-.59.07-.27-.13-1.12-.41-2.13-1.3-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.11-.54.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.13-.61-1.46-.84-2-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.66 1.12 2.84.14.18 1.93 2.95 4.68 4.03.65.28 1.16.45 1.56.58.65.2 1.24.17 1.71.1.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.31z"/><path d="M16.02 5.33c-5.88 0-10.66 4.78-10.66 10.66 0 1.88.49 3.63 1.34 5.16L5 27l5.99-1.57c1.5.82 3.22 1.29 5.04 1.29 5.88 0 10.66-4.78 10.66-10.66S21.9 5.33 16.02 5.33zm0 19.2c-1.65 0-3.19-.49-4.48-1.33l-.32-.2-3.55.93.95-3.46-.21-.35a8.89 8.89 0 0 1-1.36-4.76c0-4.93 4.01-8.94 8.94-8.94s8.94 4.01 8.94 8.94-4.01 8.94-8.94 8.94z"/>
-    </svg>
+     href="https://wa.me/50497647465?text=Hola%20tengo%20una%20consulta%20sobre%20los%20juegos%20PS4%20y%20PS5%F0%9F%A5%B7" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.53c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.61.14-.18.27-.7.86-.86 1.03-.16.18-.32.2-.59.07-.27-.13-1.12-.41-2.13-1.3-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.11-.54.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.13-.61-1.46-.84-2-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.66 1.12 2.84.14.18 1.93 2.95 4.68 4.03.65.28 1.16.45 1.56.58.65.2 1.24.17 1.71.1.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.31z"/><path d="M16.02 5.33c-5.88 0-10.66 4.78-10.66 10.66 0 1.88.49 3.63 1.34 5.16L5 27l5.99-1.57c1.5.82 3.22 1.29 5.04 1.29 5.88 0 10.66-4.78 10.66-10.66S21.9 5.33 16.02 5.33zm0 19.2c-1.65 0-3.19-.49-4.48-1.33l-.32-.2-3.55.93.95-3.46-.21-.35a8.89 8.89 0 0 1-1.36-4.76c0-4.93 4.01-8.94 8.94-8.94s8.94 4.01 8.94 8.94-4.01 8.94-8.94 8.94z"/></svg>
   </a>
 </body>
 </html>
